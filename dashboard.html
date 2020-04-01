@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Compleet Shop Cloud v2</title>
+      <!-- Custom fonts for this template-->
+      <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,700i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+      <!-- Custom styles for this template-->
+      <link href="css/sb-admin-2.min.css" rel="stylesheet">
+      <link href="css/cloud.css" rel="stylesheet">
+      <script src="vendor/jquery/jquery.min.js"></script>
+   </head>
+   <body id="page-top">
+      <!-- Page Wrapper -->
+      <div id="wrapper">
+         <!-- Sidebar -->
+         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <li class="logo_are">
+               <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.html">
+               <img src="img/logo.png" alt="">
+               </a>
+               <div class="sidebar_search_area">
+                  <div class="sidebar_search">
+                     <form id="search_form" method="get" action="" class="sb_form">
+                        <span class="search_icon">	<i class="fas fa-cog"></i></span>
+                        <input placeholder="Aran Hartgring" class="form-control" type="text" name="s" id="search_inp">
+                        <button type="submit"><i class="fas fa-power-off"></i></button>
+                     </form>
+                  </div>
+               </div>
+            </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+               <a class="nav-link" href="dashboard.html">
+               <i class="fas fa-fw fa_dash"></i>
+               <span>Dashboard</span></a>
+            </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+               <a class="nav-link" href="webshops.html">
+               <i class="fas fa-fw fa_webshops"></i>
+               <span>Webshops</span> <span class="side_bar_counter">7</span></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+               <i class="fas fa-fw fa_templates"></i>
+               <span>Templates</span></a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">
+               <i class="fas fa-fw fa_appstore"></i>
+               <span>Appstore</span> <span class="side_bar_counter">7</span></a>
+            </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <i class="fas fa-fw fa_client"></i>
+               <span>Klanten</span></a>
+            </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <i class="fas fa-fw fa_nieuwsbarif"></i>
+               <span>Nieuwsbrief</span></a>
+            </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <i class="fas fa-fw fa_support_video"></i>
+               <span>videos manuals</span></a>
+            </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <i class="fas fa-fw fa_support"></i>
+               <span>Support</span> <span class="side_bar_counter green_bg">7</span></a>
+            </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <i class="fas fa-fw fa_support_files"></i>
+               <span>Files</span></a>
+            </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <i class="fas fa-fw fa_support_faq"></i>
+               <span>FAQ</span></a>
+            </li>
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">
+               <i class="fas fa-fw fa_support_sla"></i>
+               <span>SLA</span></a>
+            </li>
+         </ul>
+         <!-- End of Sidebar -->
+         <!-- Content Wrapper -->
+         <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+               <!-- Topbar -->
+               <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top">
+                  <!-- Sidebar Toggle (Topbar) -->
+                  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                  <i class="fa fa-bars"></i>
+                  </button>
+                  <!-- Topbar Search -->
+                  <div class="d-none d-sm-inline-block header_text mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                     <p> <img src="img/new.png" alt=""> Er zijn 3 nieuwe updates</p>
+                  </div>
+                  <!-- Topbar Navbar -->
+                  <ul class="navbar-nav ml-auto">
+                     <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                     <li class="nav-item dropdown no-arrow d-sm-none">
+                        <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <!-- Dropdown - Messages -->
+                        <div class="dropdown-menu p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                           <form class="form-inline mr-auto w-100 navbar-search">
+                              <div class="input-group">
+                                 <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                 <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                    </button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </li>
+                     <div class="topbar-divider d-none d-sm-block"></div>
+                     <!-- Nav Item - Alerts -->
+                     <li class="nav-item dropdown no-arrow mx-1 dropleft">
+                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="far fa-bell"></i>
+                           <!-- Counter - Alerts -->
+                           <span class="badge badge-danger badge-counter bottom_counter">6</span>
+                        </a>
+                        <!-- Dropdown - Alerts -->
+                        <div class="my_custom_drop_down dropdown-list dropdown-menu shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                           <div class="my_custom_drop_down_content">
+                              <p><a href="#"><span>4</span>Open supportvragen</a></p>
+                              <p><a href="#"><span>2</span>Apps supportvragen</a></p>
+                           </div>
+                        </div>
+                     </li>
+                     <div class="topbar-divider d-none d-sm-block"></div>
+                     <!-- Nav Item - Messages -->
+                     <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <i class="fas fa-cog"></i>
+                           <!-- Counter - Messages -->
+                           <!--                <span class="badge badge-danger badge-counter">7</span>-->
+                        </a>
+                        <!-- Dropdown - Messages -->
+                        <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                           <h6 class="dropdown-header">
+                              Message Center
+                           </h6>
+                           <a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="dropdown-list-image mr-3">
+                                 <img class="rounded-circle" src="https://source.unsplash.com/fn_BT9fwg_E/60x60" alt="">
+                                 <div class="status-indicator bg-success"></div>
+                              </div>
+                              <div class="font-weight-bold">
+                                 <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                                 <div class="small text-gray-500">Emily Fowler · 58m</div>
+                              </div>
+                           </a>
+                           <a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="dropdown-list-image mr-3">
+                                 <img class="rounded-circle" src="https://source.unsplash.com/AU4VPcFN4LE/60x60" alt="">
+                                 <div class="status-indicator"></div>
+                              </div>
+                              <div>
+                                 <div class="text-truncate">I have the photos that you ordered last month, how would you like them sent to you?</div>
+                                 <div class="small text-gray-500">Jae Chun · 1d</div>
+                              </div>
+                           </a>
+                           <a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="dropdown-list-image mr-3">
+                                 <img class="rounded-circle" src="https://source.unsplash.com/CS2uCrpNzJY/60x60" alt="">
+                                 <div class="status-indicator bg-warning"></div>
+                              </div>
+                              <div>
+                                 <div class="text-truncate">Last month's report looks great, I am very happy with the progress so far, keep up the good work!</div>
+                                 <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                              </div>
+                           </a>
+                           <a class="dropdown-item d-flex align-items-center" href="#">
+                              <div class="dropdown-list-image mr-3">
+                                 <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60" alt="">
+                                 <div class="status-indicator bg-success"></div>
+                              </div>
+                              <div>
+                                 <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</div>
+                                 <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                              </div>
+                           </a>
+                           <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                        </div>
+                     </li>
+                     <div class="topbar-divider d-none d-sm-block"></div>
+                  </ul>
+               </nav>
+               <!-- End of Topbar -->
+               <!-- Begin Page Content -->
+               <div id="complete_shop" class="container-fluid">
+                  <div class="row">
+                     <div class="col-xl-4 col-md-4 mb-4">
+                        <div class="card may_card h-100 py-2">
+                           <div class="card-body">
+                              <div class="row no-gutters align-items-center btn1">
+                                 <div class="col-auto mr-3">
+                                    <a href="#" class="btn btn-success btn-circle btn-lg">
+                                    <i class="fas fa-shops"></i>
+                                    </a>
+                                 </div>
+                                 <div class="col">
+                                    <div class="mb-1">Aantal shops</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="parent_color">73</span> </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-md-4 mb-4">
+                        <div class="card may_card h-100 py-2">
+                           <div class="card-body">
+                              <div class="row no-gutters align-items-center btn2">
+                                 <div class="col-auto mr-3">
+                                    <a href="#" class="btn btn-success btn-circle btn-lg">
+                                    <i class="fas fa-user"></i>
+                                    </a>
+                                 </div>
+                                 <div class="col">
+                                    <div class="mb-1">Klanten</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="parent_color">33</span> </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-md-4 mb-4">
+                        <div class="card may_card h-100 py-2">
+                           <div class="card-body">
+                              <div class="row no-gutters align-items-center btn3">
+                                 <div class="col-auto mr-3">
+                                    <a href="#" class="btn btn-success btn-circle btn-lg">
+                                    <i class="fas fa-sla"></i>
+                                    </a>
+                                 </div>
+                                 <div class="col">
+                                    <div class="mb-1">SLA</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800"><span class="parent_color">11</span> </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="row">
+                     <div class="col-xl-4 col-md-4 mb-4 complete_table">
+                        <div class="card may_card mb-4">
+                           <div class="card-header py-3">
+                              <h6 class="m-0 btn3">
+                                 <a href="#" class="btn btn-success btn-circle item_notification">
+                                    <i class="fas fa-apps"></i>
+                                    <!--<span>5</span>-->
+                                 </a>
+                                 Apps
+                              </h6>
+                           </div>
+                           <div class="card-body complete_number_padding">
+                              <div class="activity_numb">
+                                 <div class="number_single">
+                                    <h1>7</h1>
+                                    <p>Aantal <br> beschikbaar</p>
+                                 </div>
+                                 <div class="number_single">
+                                    <h1>9</h1>
+                                    <p>in <br> gebruik</p>
+                                 </div>
+                              </div>
+                              <div class="activity_text">
+                                 <p> <span class="warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></span> 2 Apps support vragen > </p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-4 col-md-4 mb-4 complete_table">
+                        <div class="card may_card mb-4">
+                           <div class="card-header py-3">
+                              <h6 class="m-0 btn3">
+                                 <a href="#" class="btn btn-success btn-circle item_notification">
+                                    <i class="fas fa-suport"></i>
+                                    <!--<span>5</span>-->
+                                 </a>
+                                 Support
+                              </h6>
+                              <div class="tab_list" id="to_do_list">
+                                 <ul>
+                                    <li class="active"><a data-class="to_do_item" href="#">Open</a></li>
+                                    <li><a data-class="terugbellen" href="#">Gesloten</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="card-body">
+                              <div class="support_area">
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       12-07-2019 
+                                       <br>
+                                       3 dagen
+                                    </div>
+                                    <div class="support_counter">
+                                       <div class="support_icon red_counter">1</div>
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3 class="active">DETOPSHOP.NL</h3>
+                                       <p>Onze iDeal werkt niet maar alleen bij...</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       12-07-2019 
+                                       <br>
+                                       3 dagen
+                                    </div>
+                                    <div class="support_counter">
+                                       <div class="support_icon red_counter">2</div>
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3>VLOERMAT.COM </h3>
+                                       <p>Het menu werkt niet zo lijkt het?</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       12-07-2019 
+                                       <br>
+                                       3 dagen
+                                    </div>
+                                    <div class="support_counter">
+                                       <div class="support_icon red_counter">1</div>
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3>TEGEL.STORE</h3>
+                                       <p>Waarom staat laatst ingelogd nog...</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       12-07-2019 
+                                       <br>
+                                       3 dagen
+                                    </div>
+                                    <div class="support_counter">
+                                       <div class="support_icon green_counter">3</div>
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3>DOPPEN.NL</h3>
+                                       <p>bellen ik heb een problem....</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       12-07-2019 
+                                       <br>
+                                       3 dagen
+                                    </div>
+                                    <div class="support_counter">
+                                       <div class="support_icon">4</div>
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3 class="active">HAROBI.NL</h3>
+                                       <p>blabla lorem ik heb een problem.</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       12-07-2019 
+                                       <br>
+                                       3 dagen
+                                    </div>
+                                    <div class="support_counter">
+                                       <div class="support_icon red_counter">1</div>
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3>CAMPEERSHOP.NL </h3>
+                                       <p>lk will graag google shopping hoe...</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       12-07-2019 
+                                       <br>
+                                       3 dagen
+                                    </div>
+                                    <div class="support_counter">
+                                       <div class="support_icon">2</div>
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3>KANTOORSTOELEN .NL </h3>
+                                       <p>Kan ik mijn shop upgraden met...</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="update_section" class="col-xl-4 col-md-4 mb-4 complete_table">
+                        <div class="card may_card mb-4">
+                           <div class="card-header py-3">
+                              <h6 class="m-0">
+                                 <a href="#" class="btn btn-success btn-circle item_notification">
+                                    <i class="fas fa-updates"></i>
+                                    <!--<span>5</span>-->
+                                 </a>
+                                 Updates
+                              </h6>
+                           </div>
+                           <div class="card-body">
+                              <div class="support_area update_part">
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       Dec 2019
+                                    </div>
+                                    <div class="support_support_details red_color">
+                                       <h3 class="active">NIEUWE APP TOEGEVOEGD</h3>
+                                       <p>nieuwe app is om de SEO te automatic...</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       Dec 2019
+                                    </div>
+                                    <div class="support_support_details red_color">
+                                       <h3 class="active">NIEUWE APP TOEGEVOEGD</h3>
+                                       <p>nieuwe app is om de filters te automatic...</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       Nov 2019
+                                    </div>
+                                    <div class="support_support_details red_color">
+                                       <h3 class="active">NIEUWE FUNCTIE TOEGEVOEGD</h3>
+                                       <p>Deze nieuwe app is om de SEO te automatic...</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       Nov 2019
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3 class="active gray_bg">NIEUWE APP TOEGEVOEGD</h3>
+                                       <p>nieuwe app is om de filters te automatic...</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       Aug 2019
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3 class="active gray_bg">NIEUWE TEMPLATE TOEGEVOEGD</h3>
+                                       <p>Deze nieuwe app is om de filters te automatic...</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       jul 2019
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3 class="active gray_bg">NIEUWE APP TOEGEVOEGD</h3>
+                                       <p>nieuwe app is om de SEO automatic...</p>
+                                    </div>
+                                 </div>
+                                 <div class="single_support">
+                                    <div class="support_date">
+                                       jun 2019
+                                    </div>
+                                    <div class="support_support_details">
+                                       <h3 class="active gray_bg">NIEUWE MODULE TOEGEVOEGD</h3>
+                                       <p>Deze nieuwe app is om de filters te automatic...</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="row">
+                     <div class="col-xl-8 col-md-8 mb-4 complete_table">
+                        <div class="card may_card mb-4">
+                           <div class="card-header py-3">
+                              <h6 class="m-0 btn3">
+                                 <a href="#" class="btn btn-success btn-circle item_notification">
+                                    <i class="fas fa-apps"></i>
+                                    <!--<span>5</span>-->
+                                 </a>
+                                 Meeste Bezoekers
+                              </h6>
+                           </div>
+                           <div class="card-body">
+                              
+                              
+                              
+      							<script src="js/chart/chart.bundle.min.js"></script>
+      							<script src="js/chart/chart_utils.js"></script>
+								<!-- <link href="js/chart/chart.min.css" rel="stylesheet">-->
+                             	
+                             	<canvas id="canvasDP"></canvas>
+							<!-- <button id="randomizeData">Randomize Data</button> -->
+							<script>
+								var barChartData = {
+									labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September','October','November','December'],
+									datasets: [{
+										label: 'Nieuwsbrief',
+										backgroundColor: window.chartColors.color1,
+										data: [
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor()
+										]
+									}, {
+										label: 'Formulieren',
+										backgroundColor: window.chartColors.color2,
+										data: [
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor()
+										]
+									}, {
+										label: 'Vbooks',
+										backgroundColor: window.chartColors.color3,
+										data: [
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor()
+										]
+									}, {
+										label: 'Social Media',
+										backgroundColor: window.chartColors.color4,
+										data: [
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor()
+										]
+									}, {
+										label: 'SEA',
+										backgroundColor: window.chartColors.color5,
+										data: [
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor()
+										]
+									}, {
+										label: 'SEO',
+										backgroundColor: window.chartColors.color6,
+										data: [
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor(),
+											randomScalingFactor()
+										]
+									}]
+
+								};
+								window.onload = function() {
+									var ctx = document.getElementById('canvasDP').getContext('2d');
+									window.myBar = new Chart(ctx, {
+										type: 'bar',
+										data: barChartData,
+										options: {
+											title: {
+												display: true,
+												text: 'Dialog Pro'
+											},
+											tooltips: {
+												mode: 'index',
+												intersect: true
+											},
+											responsive: true,
+											scales: {
+												xAxes: [{
+													stacked: true,
+												}],
+												yAxes: [{
+													stacked: true
+												}]
+											}
+										}
+									});
+								};
+
+								document.getElementById('randomizeData').addEventListener('click', function() {
+									barChartData.datasets.forEach(function(dataset) {
+										dataset.data = dataset.data.map(function() {
+											return randomScalingFactor();
+										});
+									});
+									window.myBar.update();
+								});
+							</script>
+                              
+                              
+                              
+                           </div>
+                        </div>
+                     </div>
+                     
+                     <div id="top_shop" class="col-xl-4 col-md-4 mb-4 complete_table">
+                        <div class="card may_card mb-4">
+                           <div class="card-header py-3">
+                              <h6 class="m-0 btn3">
+                                 <a href="#" class="btn btn-success btn-circle item_notification">
+                                    <i class="fas fa-updates"></i>
+                                    <!--<span>5</span>-->
+                                 </a>
+                                 Top shops
+                              </h6>
+                              
+                              <div class="tab_list" id="to_do_list">
+								 <ul>
+									<li class=""><a href="#"> <img src="img/dash_icon/wrench.png" alt=""> </a></li>
+									<li><a href="#"><img src="img/dash_icon/chart_area.png" alt=""></a></li>
+								 </ul>
+							  </div>
+                              
+                           </div>
+                           <div class="card-body">
+                              <div class="top_shop_area">
+                              
+                              
+                              	<div class="single_shop">
+                              		<div class="shop_circle">
+                              			<i class="fas fa-dot-circle"></i>
+                              		</div>
+                              		<div class="shop_name">
+                              			<a href="#">detopshop.nl</a>
+                              		</div>
+                              		<div class="shop_status">
+                              			<i class="fas fa-circle"></i>
+                              		</div>
+                              		<div class="shop_stat">
+                              			10.002
+                              		</div>
+                              	</div>
+                              
+                              
+                              	<div class="single_shop">
+                              		<div class="shop_circle">
+                              			<i class="fas fa-dot-circle"></i>
+                              		</div>
+                              		<div class="shop_name">
+                              			<a href="#">vloermat.com</a>
+                              		</div>
+                              		<div class="shop_status">
+                              			<i class="fas fa-circle"></i>
+                              		</div>
+                              		<div class="shop_stat">
+                              			7803
+                              		</div>
+                              	</div>
+                              
+                              
+                              	<div class="single_shop">
+                              		<div class="shop_circle">
+                              			<i class="fas fa-dot-circle"></i>
+                              		</div>
+                              		<div class="shop_name">
+                              			<a href="#">tegel.store</a>
+                              		</div>
+                              		<div class="shop_status">
+                              			<i class="fas fa-circle"></i>
+                              		</div>
+                              		<div class="shop_stat">
+                              			1222
+                              		</div>
+                              	</div>
+                              
+                              
+                              	<div class="single_shop">
+                              		<div class="shop_circle">
+                              			<i class="fas fa-dot-circle"></i>
+                              		</div>
+                              		<div class="shop_name">
+                              			<a href="#">fietsen.nl</a>
+                              		</div>
+                              		<div class="shop_status">
+                              			<i class="fas fa-circle"></i>
+                              		</div>
+                              		<div class="shop_stat">
+                              			5030
+                              		</div>
+                              	</div>
+                              
+                              
+                              	<div class="single_shop">
+                              		<div class="shop_circle">
+                              			<i class="fas fa-dot-circle"></i>
+                              		</div>
+                              		<div class="shop_name">
+                              			<a href="#">bloembollen.com</a>
+                              		</div>
+                              		<div class="shop_status">
+                              			<i class="fas fa-circle"></i>
+                              		</div>
+                              		<div class="shop_stat">
+                              			800
+                              		</div>
+                              	</div>
+                              
+                              
+                              	<div class="single_shop">
+                              		<div class="shop_circle">
+                              			<i class="fas fa-dot-circle"></i>
+                              		</div>
+                              		<div class="shop_name">
+                              			<a href="#">razor.shop</a>
+                              		</div>
+                              		<div class="shop_status">
+                              			<i class="fas fa-circle"></i>
+                              		</div>
+                              		<div class="shop_stat">
+                              			4700
+                              		</div>
+                              	</div>
+                              
+                              
+                              	<div class="single_shop">
+                              		<div class="shop_circle">
+                              			<i class="fas fa-dot-circle"></i>
+                              		</div>
+                              		<div class="shop_name">
+                              			<a href="#">electroshop.nl</a>
+                              		</div>
+                              		<div class="shop_status">
+                              			<i class="fas fa-circle"></i>
+                              		</div>
+                              		<div class="shop_stat">
+                              			4400
+                              		</div>
+                              	</div>
+                              
+                              
+                              	<div class="single_shop">
+                              		<div class="shop_circle">
+                              			<i class="fas fa-dot-circle"></i>
+                              		</div>
+                              		<div class="shop_name">
+                              			<a href="#">facilitypoint.com</a>
+                              		</div>
+                              		<div class="shop_status">
+                              			<i class="fas fa-circle"></i>
+                              		</div>
+                              		<div class="shop_stat">
+                              			2100
+                              		</div>
+                              	</div>
+                              
+                              
+                              	<div class="single_shop">
+                              		<div class="shop_circle">
+                              			<i class="fas fa-dot-circle"></i>
+                              		</div>
+                              		<div class="shop_name">
+                              			<a href="#">doppen.com</a>
+                              		</div>
+                              		<div class="shop_status">
+                              			<i class="fas fa-circle"></i>
+                              		</div>
+                              		<div class="shop_stat">
+                              			3700
+                              		</div>
+                              	</div>
+                              	
+                                 <div class="single_shop">
+                                    <div class="shop_circle">
+                                       <i class="fas fa-dot-circle"></i>
+                                    </div>
+                                    <div class="shop_name">
+                                       <a href="#">tenthshop.nl</a>
+                                    </div>
+                                    <div class="shop_status">
+                                       <i class="fas fa-circle"></i>
+                                    </div>
+                                    <div class="shop_stat">
+                                      280
+                                    </div>
+                                 </div>
+                              	
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+                  
+               </div>
+               <!-- /.container-fluid -->
+            </div>
+            <!-- End of Main Content -->
+         </div>
+         <!-- End of Content Wrapper -->
+      </div>
+      <!-- End of Page Wrapper -->
+      <!-- Scroll to Top Button-->
+      <a class="scroll-to-top rounded" href="#page-top">
+      <i class="fas fa-angle-up"></i>
+      </a>
+      <!-- Bootstrap core JavaScript-->
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <!-- Core plugin JavaScript-->
+      <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+      <!-- Custom scripts for all pages-->
+      <script src="js/sb-admin-2.min.js"></script>
+   </body>
+</html>
